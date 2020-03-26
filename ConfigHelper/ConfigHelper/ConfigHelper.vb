@@ -89,7 +89,7 @@ Public Class ConfigHelper
         '
         '
         dictConfigKeyWordAsKeyDetailAsValue = New Dictionary(Of String, ConfigLine)
-
+        ExecutionLog = ""
         'these two no need at here, it will be parsed per line
         '这两个不需要， 会在每行暂存
         'Dim ConfigKeyWord As String = ""
@@ -196,6 +196,15 @@ Public Class ConfigHelper
         sr.Close()
         sr = Nothing
 
+        '
+        If ExecutionLog.Trim = "" Then
+            Select Case CONST_LANG
+                Case CONST_LANG_ENUM.LANG_ZHCN
+                    ExecutionLog = "成功读取无错误" & vbCrLf
+                Case Else
+                    ExecutionLog = "Config load succss" & vbCrLf
+            End Select
+        End If
 
     End Sub
 
