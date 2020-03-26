@@ -248,8 +248,8 @@ Public Class ConfigHelper
             If subKey.Value.ConfigDesc <> "" Then
                 sw.WriteLine("") 'always add empty line before description 描述前始终添加空行
                 sw.WriteLine(subKey.Value.ConfigDesc) '描述写在前面
-                sw.WriteLine(String.Format("{0} {1} {2}", ExtendStringLength(subKey.Value.ConfigKeyWord), CONST_VALUE_SEPARATOR, subKey.Value.ConfigVALUE))
             End If
+            sw.WriteLine(String.Format("{0} {1} {2}", ExtendStringLength(subKey.Value.ConfigKeyWord), CONST_VALUE_SEPARATOR, subKey.Value.ConfigVALUE))
         Next
         sw.Close()
         sw = Nothing
