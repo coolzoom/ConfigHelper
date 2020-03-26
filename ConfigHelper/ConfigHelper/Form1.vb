@@ -20,8 +20,9 @@
         dictConfig = New Dictionary(Of String, ConfigLine)
 
         configHelper = New ConfigHelper
-        configHelper.ResultTableName = CONST_CONFIG_TABLENAME
-        configHelper.ConfigFilePath = CONST_CONFIG_FILE_PATCH
+        configHelper.CONST_LANG = THIS_CONFIG_LANG
+        configHelper.ResultTableName = THIS_CONFIG_TABLENAME
+        configHelper.ConfigFilePath = THIS_CONFIG_FILE_PATCH
         DataGridView1.DataSource = configHelper.ResultTable
         dictConfig = configHelper.dictConfigKeyWordAsKeyDetailAsValue
         TextBox1.Text = configHelper.ExecutionLog

@@ -8,7 +8,7 @@ Public Class ConfigHelper
     ''' langguage 
     ''' 首选语言
     ''' </summary>
-    Public CONST_LANG As CONST_LANG_ENUM = CONST_LANG_ENUM.LANG_ZHCN
+    Public CONST_LANG As CONST_LANG_ENUM '= CONST_LANG_ENUM.LANG_ZHCN
 
     ''' <summary>
     ''' dictionary to contain the final result, key is keyword, value is the detail contains key,value,description
