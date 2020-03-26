@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class FormExample
     Inherits System.Windows.Forms.Form
 
     'Form 重写 Dispose，以清理组件列表。

@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class FormExample
     Private configHelper As ConfigHelper
     Private dictConfig As Dictionary(Of String, ConfigLine)
 

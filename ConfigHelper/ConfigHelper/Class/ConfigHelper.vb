@@ -228,6 +228,7 @@ Public Class ConfigHelper
 
     'writeback
     Public Sub SaveConfigFromDictToFile()
+        'Method1, replace parameter, 方法1,只替换找到的内容
         ''to contain the temperory config content
         'Dim tempContent As String = ""
 
@@ -241,6 +242,7 @@ Public Class ConfigHelper
 
         'Loop
 
+        'method2, rewrite entire file. 方法2， 重写所有文件
         Dim temp
         Dim sw As StreamWriter = New StreamWriter(_filePath, False, System.Text.Encoding.UTF8) 'true is append method
 

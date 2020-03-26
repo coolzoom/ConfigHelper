@@ -73,14 +73,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigHelper.vb" />
-    <Compile Include="ConfigLine.vb" />
-    <Compile Include="ConfigMapping.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="Class\ConfigHelper.vb" />
+    <Compile Include="Class\ConfigLine.vb" />
+    <Compile Include="Test\ConfigMappingExample.vb" />
+    <Compile Include="Test\FormExample.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Test\FormExample.Designer.vb">
+      <DependentUpon>FormExample.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -100,8 +100,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Test\FormExample.resx">
+      <DependentUpon>FormExample.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
