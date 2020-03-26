@@ -73,9 +73,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigWriteHelper.vb" />
-    <Compile Include="ConfigReadHelper.vb" />
+    <Compile Include="ConfigHelper.vb" />
     <Compile Include="ConfigLine.vb" />
+    <Compile Include="ConfigMapping.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>

@@ -1,6 +1,6 @@
 ﻿Imports System.IO
 
-Public Class ConfigReadHelper
+Public Class ConfigHelper
 
 #Region "vars"
 
